@@ -1,0 +1,18 @@
+name: "Waanverse Camera Recorder"
+version: "0.0.1"
+slug: "waanverse_cam_recorder"
+description: "Records living_room via go2rtc, gated by an HA template sensor"
+arch: ["aarch64", "amd64"]
+startup: services
+boot: auto
+init: false
+homeassistant_api: true
+map:
+  - type: media
+    read_only: false
+options:
+  retention_days: 7
+schema:
+  camera_rtsp_url: url
+  should_record_entity: str
+  retention_days: int(1,90)

@@ -1,0 +1,19 @@
+name: "Waanverse Camera Telegram Sync"
+version: "0.0.1"
+slug: "waanverse_cam_telegram_sync"
+description: "Sends unsent camera clips to Telegram on request"
+arch: ["aarch64", "amd64"]
+startup: services
+boot: auto
+init: false
+map:
+  - type: media
+    read_only: true
+options:
+  preview_width: 854
+  trigger_message: "/sync"
+schema:
+  telegram_bot_token: str
+  telegram_chat_id: str
+  trigger_message: str
+  preview_width: int(320,1920)

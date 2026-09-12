@@ -1,0 +1,22 @@
+configuration:
+  telegram_bot_token:
+    name: Telegram bot token
+    description: >-
+      The token for your bot, from @BotFather on Telegram
+      (looks like 123456789:ABCdef...).
+  telegram_chat_id:
+    name: Telegram chat ID
+    description: >-
+      Only messages sent from this chat are honored as a trigger.
+      Find yours by messaging your bot once, then visiting
+      https://api.telegram.org/bot<TOKEN>/getUpdates in a browser.
+  trigger_message:
+    name: Trigger phrase
+    description: >-
+      The exact phrase (case-insensitive) that starts a sync when sent
+      to the bot, e.g. /sync. Any other message is ignored.
+  preview_width:
+    name: Preview width (px)
+    description: >-
+      Width clips are scaled to before upload, to fit Telegram's 50MB
+      per-file limit. Lower this if clips still come out too large.

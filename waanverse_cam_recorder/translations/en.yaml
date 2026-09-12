@@ -1,0 +1,17 @@
+configuration:
+  camera_rtsp_url:
+    name: Camera RTSP URL
+    description: >-
+      The go2rtc relay URL for this camera's stream
+      (e.g. rtsp://192.168.1.100:8554/living_room).
+  should_record_entity:
+    name: Recording gate entity
+    description: >-
+      The Home Assistant entity this app polls every 5 seconds to decide
+      whether to record — typically a template binary_sensor that combines
+      your privacy switch, home/away state, and motion sensor. should show "on" when recording is allowed, and "off" when it is not.
+  retention_days:
+    name: Retention (days)
+    description: >-
+      Local clips older than this many days are automatically deleted
+      to free up disk space.
