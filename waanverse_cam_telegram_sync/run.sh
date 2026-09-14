@@ -52,6 +52,9 @@ while true; do
       # Case-insensitive exact match against the configured trigger phrase
       if [ "$(echo "$msg_text" | tr '[:upper:]' '[:lower:]')" = "$(echo "$TRIGGER_MESSAGE" | tr '[:upper:]' '[:lower:]')" ]; then
         bashio::log.info "Trigger message received — starting sync"
+        curl -s -F chat_id="$CHAT_ID" \
+          -F text="Waanverse Camera Telegram Sync has received your command successfully. Please wait while we send you the latest recorded clips." \
+          "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" > /dev/null
         sync_clips
       fi
     fi
