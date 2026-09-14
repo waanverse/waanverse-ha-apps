@@ -3,6 +3,7 @@ version: "0.0.1"
 slug: "waanverse_cam_recorder"
 description: "Records camera feeds via go2rtc, gated by an HA template sensor and retains them for a configurable number of days"
 arch: ["aarch64", "amd64"]
+url: "https://github.com/waanverse/waanverse-ha-apps/tree/main/waanverse_cam_recorder"
 startup: services
 boot: auto
 init: false

@@ -1,15 +1,13 @@
 # Waanverse Home Assistant Apps
 
-Home Assistant apps built and maintained by **Waanverse Labs**, for our own
-smart home and shared here for anyone who finds them useful. This repository
-is where we publish the apps we build around home automation.
+Home Assistant apps built and maintained by **Pattawee Khaotungkulmethee Drake**, [Waanverse Labs Inc](https://www.waanverse.com) for our own smart home and shared here for anyone who finds them useful. This repository is where we publish the apps we build around home automation.
 
 ## Apps in this repository
 
-| App | What it does |
-|---|---|
-| **Waanverse Cam Recorder** | Records a go2rtc camera feed into 10-minute clips, gated by a Home Assistant entity (e.g. a template sensor combining privacy mode, home/away state, and motion) |
-| **Waanverse Cam Telegram Sync** | Sends recorded clips to Telegram on request, triggered by a configurable phrase — read-only access to the recordings, no recording logic of its own |
+| App                             | What it does                                                                                                                                                     |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Waanverse Cam Recorder**      | Records a go2rtc camera feed into 10-minute clips, gated by a Home Assistant entity (e.g. a template sensor combining privacy mode, home/away state, and motion) |
+| **Waanverse Cam Telegram Sync** | Sends recorded clips to Telegram on request, triggered by a configurable phrase — read-only access to the recordings, no recording logic of its own              |
 
 Each app is self-contained and can be installed independently — you don't
 need both. Full details, configuration options, and troubleshooting notes
@@ -20,13 +18,12 @@ live in each app's own `README.md`.
 1. In Home Assistant, go to **Settings → Apps → App Store**.
 2. Open the **⋮ menu (top right) → Repositories**.
 3. Add this repository's URL:
-   ```
-   https://github.com/waanverse/waanverse-ha-apps
-   ```
+    ```
+    https://github.com/waanverse/waanverse-ha-apps
+    ```
 4. Refresh the store — both apps will appear under **Waanverse Home
    Assistant Apps**.
 5. Install, configure via each app's **Configuration** tab, then start.
-
 
 ## Design principles we follow across these apps
 
